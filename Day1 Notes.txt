@@ -1,0 +1,205 @@
+Pre-requisites:
+===========
+Install JDK8 :
+
+https://www.youtube.com/watch?v=RZ1M4VQ12cU
+
+Download Eclipse:
+
+https://www.youtube.com/watch?v=KJEwgB8EiUk
+
+Introduction:
+==========
+Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle) and released in 1995 as a core component of Sun Microsystems' Java platform. 
+Java was started as a project called "Oak" by James Gosling in June 1991.
+Java is an open source.
+Java supports object oriented programming concepts.
+		Object is an real world entity. Ex: Car,Bike,Animal,Pen,Pencil
+Java is platform independent.???
+platform means operating systems: windows,linux,mac,AIX,Solaris,Zlinux
+Java is case sensitive. The uppercase and lowercase both are different.
+
+int I=5;
+int i=5;
+ 
+System.out.println(i);-->5 // we get an error
+
+int student;//lowercase
+int STUDENT; //UPPERCASE
+int Student;//mixed case
+int i;
+int I;
+i=5;
+
+
+
+Example: helloworld is different from HelloWorld
+
+//This is my first java program
+public class HelloWorld
+{
+
+	public static void main(String args[])//main is a method
+	{
+		System.out.println("Hello World");
+	}
+}
+
+{} - Curly braces
+[]-  Square Brackets
+()-  paranthesis
+;-   Semi colon
+"-   Double Quotation
+//- Comments
+
+Class name is -> HelloWorld
+Class Contains one main method
+
+helloworld is different from HelloWorld why?? Java is case Sensitive
+
+Points to be Noted:
+---------------------
+1. The Program name should be given as same name as class Name.
+   ex: HelloWorld.java
+
+2. The java program is saved with the extension '.java'.
+
+3. Java Execution Flow->It has two steps....
+  a. Compilation-> Checks the syntax errors
+	Goto the command line and navigate to the location where the file is located and type->   
+       javac HelloWorld.java
+
+		(or)
+
+        "c:\Program Files\Java\jdk1.8.0_XXX\bin\javac" HelloWorld.java
+
+
+        Output -> HelloWorld.class(Contains bytecode)
+
+   Java Bytecode->Java bytecode is the instruction set of the Java virtual machine.A Java programmer
+   does not need to be aware of or understand Java bytecode at all.
+
+  b. Execution-> JVM (Java virtual machine)is an interpreter(executes the code line-by-line)
+     JVM converts the .class file generated during compilation phase into machine level language.
+
+       pre-requisite-> HelloWorld.class
+
+       java HelloWorld
+
+       output->Prints "Hello World" in the console.
+
+4. Java is platform independent-->".class" generated during compilation phase
+works on all the platforms without any modifications. So, java is platform independent.
+
+Ex: Compile a program on windows, and copy the .class to linux and execute the program on linux using
+jvm.
+
+JDK-Java Development kit
+JRE-Java runtime environment
+JVM-Java Virtual machine
+
+Compile once and execute on any platform with specific jvm for the operating system.
+----------------------------------------------------------------------------------------------------
+NetBeans,Rational Software Architect,Intellij
+
+Eclipse is an IDE(Integrated dev Env) useful to create Java Proj,Write Java Programs
+and Execute Java Programs.
+
+Eclipse -> when we create a project two folders are created.
+
+	src -> to store the java programs  Ex:HelloWorld.java
+
+	bin -> to store the class files.    Ex: HelloWorld.class
+
+http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neon3
+
+
+Eclipse shortcuts -> syso ctrl+space-> System.out.println
+	                 main ctrl+space->public static void main(String args[]){}
+                     Execute ctrl+F11 ->Execute
+*********
+
+                     Opening shortcut editor in eclipse -> ctrl+shift+l
+		             Quick outline -> ctrl+o 
+                     Opening a resource -> ctrl+shift+r
+		             Organizing imports -> ctrl+shift+o
+
+
+Datatype:
+---------------
+Datatypes helps to store values in a variable. They are total 8 datatypes in java.
+
+
+int x=5;
+
+Datatype  -  Size
+----------------------
+byte	     1byte   8bits b=-128 to 127;  byte b = -128; 8 bits  -2 (power7) to 2 (power 7)-1
+short	     2 bytes
+int	     4 bytes                                          -2power 31 -1 to 2 power 31
+long	     8 bytes for storing time in milliseconds. 10 *60*60*1000
+            -----------Integers
+
+float	     4 bytes  float f = 2.5f;
+double       8 bytes  double d = 2.5;
+
+	     ----------Decimal numbers
+
+char	     2 byte Character code char c = 'a';
+boolean	     true or false         boolean b = true;
+------------------------------------------------------------------------------------------------------------------------------------------------------
+String is a class not a datatype. String is useful to store group of characters..
+
+String s ="selenium";
+String s ="Hello World";
+
+
+
+Variable:
+----------------
+Variables helps to store the values. Also the name implies which varies the value
+is called an variable.
+
+		int i =10; // i is declared as int datatype and assigned a value '10'
+                
+
+		i=11;
+
+                i=12;
+
+		int i; // Declaration
+
+
+
+		int i=5; Assigning a value of 5 in variable i of type integer.
+
+		i=6;		
+
+
+		LHS  =RHS;
+
+		int i ;Declartion of integer variable
+
+		i=5; //Assingment
+
+                int i = 5; //Declaration & assignment in a single line of statement
+ 
+
+		i=6;
+
+	Declaration happens only once. But Assignment happens 'n' number of times
+
+
+Rules for Creating Variable Names:
+------------------------------------
+
+1. Single Character is allowed for vnames.  Ex int i =10; 'i' is single character
+2. Group of characters are allowed for vnames.Ex: boolean result = true;  ' result'
+3. Alphanumeric characters are allowed for vnames. Ex: int a1 = 10;
+    (Combination of characters and numbers) a1,b1,student1
+4. Variable names should start with character but not numbers int 1a=10; // wrong
+5. Keywords which are reserved/predefined cannot be used for vnames. 
+
+  int public =10;// its not valid becoz public is an predefined keyword
+
+
